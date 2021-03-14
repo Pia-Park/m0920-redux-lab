@@ -1,12 +1,23 @@
-
 const updatePerson = (currentPerson, newPerson) => {
     return {
         type: "UPDATE_PERSON",
         payload: {
-            persons: currentPerson.concat(newPerson),
+            currentPerson, newPerson
         },
     };
 };
+
+
+
+
+// const updatePerson = (currentPerson, newPerson) => {
+//     return {
+//         type: "UPDATE_PERSON",
+//         payload: {
+//             persons: currentPerson.concat(newPerson),
+//         },
+//     };
+// };
 
 
 
