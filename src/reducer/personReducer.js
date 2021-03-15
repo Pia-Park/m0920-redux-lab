@@ -10,6 +10,12 @@
 //     }
 // }
 
+//const initialState = { persons: [], hidden: false};
+//const persons = []
+//const personReducer = (state=initialState, action) => {}
+
+
+
 const personReducer = (state=[], action) =>{
     
     if(action.type === "UPDATE_PERSON"){

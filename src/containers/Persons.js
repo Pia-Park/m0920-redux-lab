@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { v4 as uuidv4 } from 'uuid';
+
 
 import Person from '../components/Person/Person';
 import AddPerson from '../components/AddPerson/AddPerson';
@@ -15,7 +17,8 @@ class Persons extends Component {
 
     personAddedHandler = () => {
         const newPerson = {
-            id: Math.random(), // not really unique but good enough here!
+            // id: Math.random(), // not really unique but good enough here!
+            id: uuidv4(),
             name: 'INAE',
             age: Math.floor( Math.random() * 40 )
         }
